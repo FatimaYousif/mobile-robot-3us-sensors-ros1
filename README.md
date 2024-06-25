@@ -8,3 +8,12 @@ A Gazebo simulation setup for testing 3 ultrasonic sensors (mounted in front of 
 
 ```bash
 roslaunch fb_gazebo fb.launch
+```
+
+3. For moving the robot, in another terminal:
+
+```bash
+rostopic pub /cmd_vel geometry_msgs/Twist 
+```
+
+(Then press tab for auto completeing the linear(x) and angular velocity (z) controller components)
